@@ -1,0 +1,13 @@
+for (int j=0;j<m;j++)
+{   
+   int i=0;
+   while(i<n)
+   {
+       if (a[i]>b[j])
+       {
+           swap(a[i],b[j]);
+       }
+       i++;
+   }
+}
+sort(b,b+m);
