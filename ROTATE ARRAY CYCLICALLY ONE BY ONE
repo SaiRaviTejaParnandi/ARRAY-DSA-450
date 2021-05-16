@@ -1,0 +1,32 @@
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  int k,temp;
+  int a[]={0,1,2,5,9};
+  int n=sizeof(a)/sizeof(a[0]);
+  cout<<"enter the factor by which you want to rotate"<<endl;
+  cin>>k;
+  while(k>0)
+  {
+      temp=a[n-1];
+      for (int i=5;i>0;i--)
+      {
+          a[i]=a[i-1];
+      }
+      a[0]=temp;
+      k--;
+  }
+  for (int i=0;i<n;i++)
+  {
+      cout<<a[i];
+  }
+
+
+  
+    return 0;
+}
